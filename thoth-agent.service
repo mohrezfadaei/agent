@@ -1,0 +1,10 @@
+[Unit]
+Description=Thoth Agent App
+After=network.target
+
+[Service]
+User=root
+ExecStart=/usr/bin/thoth-agent -interval 300s
+
+[Install]
+WantedBy=multi-user.target
