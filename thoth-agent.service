@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=/usr/bin/thoth-agent -interval 300s
+ExecStart=/usr/bin/thoth-agent -interval 10s
 
 [Install]
 WantedBy=multi-user.target

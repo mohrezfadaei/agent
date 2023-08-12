@@ -12,8 +12,8 @@ import (
 )
 
 const (
-	getSerialURLTemplate = "http://api.morphix.online:8080/api/v1/device_by_serial/%s"
-	postURLTemplate      = "http://api.morphix:8080/api/v1/stat/%s"
+	getSerialURLTemplate = "http://api.morphix.online:5000/api/v1/device_by_serial/%s"
+	postURLTemplate      = "http://api.morphix.online:5000/api/v1/stat/%s"
 	serialFilePath       = "/etc/thoth/serial.id"
 	defaultLoopInterval  = 300 * time.Second // 300 seconds (5 minutes)
 )
