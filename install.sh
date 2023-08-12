@@ -51,15 +51,15 @@ if [[ ! -f "$config_dir/serial.id" ]]; then
   echo $SERIAL > "$config_dir/serial.id"
 fi
 
-#systemctl is-enabled "$service_name" &>/dev/null || {
-#    systemctl enable "$service_name"
-#    echo "Enabled $service_name"
-#}
-#
-#systemctl is-active "$service_name" &>/dev/null || {
-#    systemctl start "$service_name"
-#    echo "Started $service_name"
-#}
+systemctl is-enabled "$service_name" &>/dev/null || {
+    systemctl enable "$service_name"
+    echo "Enabled $service_name"
+}
+
+systemctl is-active "$service_name" &>/dev/null || {
+    systemctl start "$service_name"
+    echo "Started $service_name"
+}
 
 # Loading animation function
 animate_loading() {
